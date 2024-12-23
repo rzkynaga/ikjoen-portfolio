@@ -7,7 +7,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Tech Enthusiast",
-  avatar: "/images/kisin.png",
+  avatar: "/images/kadiv.png",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -41,22 +41,22 @@ const social = [
     icon: "instagram",
     link: "https://instagram.com/rzkynaga",
   },
-//   {
-//     name: "Email",
-//     icon: "email",
-//     link: "mailto:rzkynaga1@gmail.com",
-//   },
+  //   {
+  //     name: "Email",
+  //     icon: "email",
+  //     link: "mailto:rzkynaga1@gmail.com",
+  //   },
 ];
 
 const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Tech Student, Designer and Programmer</>,
   subline: (
     <>
-      I'm Rizky, a design engineer at{" "}
-      <InlineCode>Sriwijaya University</InlineCode>, where I craft intuitive
+      I'm Rizky, a exciting student at <br/>
+      <InlineCode className="">Sriwijaya University</InlineCode>, where I craft intuitive
       user experiences. After hours, I build my own projects.
     </>
   ),
@@ -109,7 +109,7 @@ const about = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/org/himaja24.jpg",
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -145,7 +145,14 @@ const about = {
             organizational performance.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/org/himaja23.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       {
         company: "Himsi Fasilkom Unsri",
@@ -161,7 +168,14 @@ const about = {
             Blender).
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/org/himsi.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       {
         company: "Himaja Unsri",
@@ -173,7 +187,14 @@ const about = {
             and event promotions.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/org/himaja22.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       {
         company: "PKKMB Universitas Sriwijaya 2024",
@@ -197,7 +218,14 @@ const about = {
             and event promotions.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/org/sb24.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       {
         company: "Sriwijaya Besanjo 2025",
@@ -312,10 +340,19 @@ const about = {
     skills: [
       {
         title: "TrashCash Digital Waste Bank App (UI/UX Design)",
-        description: (
-          <>Designed an intuitive interface for waste-to-balance conversions via e-wallets.</>,
-          <>Enhanced user experience based on early feedback, reducing user complaints effectively.</>
-        ),
+        description:
+          ((
+            <>
+              Designed an intuitive interface for waste-to-balance conversions
+              via e-wallets.
+            </>
+          ),
+          (
+            <>
+              Enhanced user experience based on early feedback, reducing user
+              complaints effectively.
+            </>
+          )),
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -329,7 +366,10 @@ const about = {
       {
         title: "Sriwijaya UniLink: U-Meet App (UI/UX Design)",
         description: (
-          <>Created interactive prototypes and wireframes with a 90%+ user satisfaction rate via surveys.</>
+          <>
+            Created interactive prototypes and wireframes with a 90%+ user
+            satisfaction rate via surveys.
+          </>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [
@@ -344,7 +384,10 @@ const about = {
       {
         title: "Mobile Language Learning App Prototype, PenaKata",
         description: (
-          <>Developed a fully monitored and controlled system repository for the team.</>
+          <>
+            Developed a fully monitored and controlled system repository for the
+            team.
+          </>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [
@@ -359,7 +402,10 @@ const about = {
       {
         title: "ToDo React",
         description: (
-          <>Created interactive prototypes and wireframes with a 90%+ user satisfaction rate via surveys.</>
+          <>
+            Created interactive prototypes and wireframes with a 90%+ user
+            satisfaction rate via surveys.
+          </>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [
@@ -374,7 +420,10 @@ const about = {
       {
         title: "Simple Weather App",
         description: (
-          <>Created interactive prototypes and wireframes with a 90%+ user satisfaction rate via surveys.</>
+          <>
+            Created interactive prototypes and wireframes with a 90%+ user
+            satisfaction rate via surveys.
+          </>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [
@@ -389,7 +438,10 @@ const about = {
       {
         title: "Sriwijaya Besanjo 2025 Official Website",
         description: (
-          <>Created interactive prototypes and wireframes with a 90%+ user satisfaction rate via surveys.</>
+          <>
+            Created interactive prototypes and wireframes with a 90%+ user
+            satisfaction rate via surveys.
+          </>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [
