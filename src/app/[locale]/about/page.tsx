@@ -97,7 +97,8 @@ export default function About(
                     style={{ left: '0', top: '50%', transform: 'translateY(-50%)' }}
                     position="fixed"
                     paddingLeft="24" gap="32"
-                    direction="column" hide="s">
+                    direction="column" hide="s"
+                    justifyContent='center'>
                     <TableOfContents
                         structure={structure}
                         about={about} />

@@ -41,11 +41,11 @@ const social = [
     icon: "instagram",
     link: "https://instagram.com/rzkynaga",
   },
-  {
-    name: "Email",
-    icon: "email",
-    link: "mailto:rzkynaga1@gmail.com",
-  },
+//   {
+//     name: "Email",
+//     icon: "email",
+//     link: "mailto:rzkynaga1@gmail.com",
+//   },
 ];
 
 const home = {
@@ -334,7 +334,7 @@ const about = {
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/UMEET.jpg",
+            src: "/images/projects/umeet.jpg",
             alt: "Project image",
             width: 16,
             height: 9,
