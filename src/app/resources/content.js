@@ -102,12 +102,8 @@ const about = {
         role: "General Chairman",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20%
-            increase in user engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows,
-            enabling designers to iterate 50% faster.
+            Actively mentoring event planning as an advisor, overseeing more
+            than 10 event coordinators.
           </>,
         ],
         images: [
@@ -126,12 +122,11 @@ const about = {
         role: "Creative Production & Documentation Staff",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple
-            platforms, improving design consistency by 40%.
+            Developed innovative visual concepts aligned with emerging trends.
           </>,
           <>
-            Led a cross-functional team to launch a new product line,
-            contributing to a 15% increase in overall company revenue.
+            Successfully managed documentation and visual content for
+            departmental activities.
           </>,
         ],
         images: [],
@@ -142,28 +137,148 @@ const about = {
         role: "Head of Event Division - Internal",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple
-            platforms, improving design consistency by 40%.
+            Boosted team appreciation by sending over 200 thank-you notes to
+            program committee members
           </>,
           <>
-            Led a cross-functional team to launch a new product line,
-            contributing to a 15% increase in overall company revenue.
+            Consistently collected feedback from 30+ respondents to evaluate
+            organizational performance.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Himsi Fasilkom Unsri",
+        timeframe: "Jan 2023 - Des 2023",
+        role: "Multimedia Visual Creative Staff - Medinfo",
+        achievements: [
+          <>
+            Applied trending graphic designs to over five monthly content tasks
+            and event promotions.
+          </>,
+          <>
+            Mastered 5+ editing tools (Photoshop, Figma, Canva, Spark AR,
+            Blender).
           </>,
         ],
         images: [],
       },
       {
         company: "Himaja Unsri",
-        timeframe: "Jun 2023 - May 2024 ",
-        role: "Multimedia Visual Creative Staff - Medinfo",
+        timeframe: "Sep 2022 - May 2023",
+        role: "Internal Department Staff",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple
-            platforms, improving design consistency by 40%.
+            Applied trending graphic designs to over five monthly content tasks
+            and event promotions.
           </>,
+        ],
+        images: [],
+      },
+      {
+        company: "PKKMB Universitas Sriwijaya 2024",
+        timeframe: "Jul 2024 - Sep 2024",
+        role: "Head of Event Division",
+        achievements: [
           <>
-            Led a cross-functional team to launch a new product line,
-            contributing to a 15% increase in overall company revenue.
+            Applied trending graphic designs to over five monthly content tasks
+            and event promotions.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Sriwijaya Besanjo 2024",
+        timeframe: "Jan 2023 - Jan 2024",
+        role: "Event Chairman",
+        achievements: [
+          <>
+            Applied trending graphic designs to over five monthly content tasks
+            and event promotions.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Sriwijaya Besanjo 2025",
+        timeframe: "Jan 2024 - Present",
+        role: "General Steering Committee",
+        achievements: [
+          <>
+            Applied trending graphic designs to over five monthly content tasks
+            and event promotions.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "SI Fest 2023",
+        timeframe: "Aug 2023 - Nov 2023",
+        role: "Staff of Videography & Documentation",
+        achievements: [
+          <>
+            Applied trending graphic designs to over five monthly content tasks
+            and event promotions.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Information Systems Inauguration 2023",
+        timeframe: "Sep 2023 - Oct 2024",
+        role: "Vice Event Chairman",
+        achievements: [
+          <>
+            Applied trending graphic designs to over five monthly content tasks
+            and event promotions.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Himaja Festival 2023",
+        timeframe: "Jan 2023 - May 2023",
+        role: "Head of Sponsorship Division",
+        achievements: [
+          <>
+            Applied trending graphic designs to over five monthly content tasks
+            and event promotions.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Organizational Management Sharing Session",
+        timeframe: "Feb 2023 - Mar 2023",
+        role: "Head of Publication Documentation Division",
+        achievements: [
+          <>
+            Applied trending graphic designs to over five monthly content tasks
+            and event promotions.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Sriwijaya Besanjo 2023",
+        timeframe: "Sep 2022 - Jan 2023",
+        role: "Staff of Media & Information Division",
+        achievements: [
+          <>
+            Applied trending graphic designs to over five monthly content tasks
+            and event promotions.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Himaja Unsri Anniversary 2022",
+        timeframe: "Oct 2022 - Dec 2022",
+        role: "Vice Event Chairman",
+        achievements: [
+          <>
+            Applied trending graphic designs to over five monthly content tasks
+            and event promotions.
           </>,
         ],
         images: [],
@@ -193,23 +308,18 @@ const about = {
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Projects",
     skills: [
       {
-        title: "Figma",
+        title: "TrashCash Digital Waste Bank App (UI/UX Design)",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Designed an intuitive interface for waste-to-balance conversions via e-wallets.</>,
+          <>Enhanced user experience based on early feedback, reducing user complaints effectively.</>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/projects/trashcash.png",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -217,14 +327,74 @@ const about = {
         ],
       },
       {
-        title: "Next.js",
+        title: "Sriwijaya UniLink: U-Meet App (UI/UX Design)",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>Created interactive prototypes and wireframes with a 90%+ user satisfaction rate via surveys.</>
         ),
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
+            src: "/images/projects/UMEET.jpg",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Mobile Language Learning App Prototype, PenaKata",
+        description: (
+          <>Developed a fully monitored and controlled system repository for the team.</>
+        ),
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/pena.png",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "ToDo React",
+        description: (
+          <>Created interactive prototypes and wireframes with a 90%+ user satisfaction rate via surveys.</>
+        ),
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/todo.png",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Simple Weather App",
+        description: (
+          <>Created interactive prototypes and wireframes with a 90%+ user satisfaction rate via surveys.</>
+        ),
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/weather.png",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Sriwijaya Besanjo 2025 Official Website",
+        description: (
+          <>Created interactive prototypes and wireframes with a 90%+ user satisfaction rate via surveys.</>
+        ),
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/prakasa.png",
             alt: "Project image",
             width: 16,
             height: 9,
