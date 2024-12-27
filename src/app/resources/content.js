@@ -13,7 +13,7 @@ const person = {
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -55,9 +55,9 @@ const home = {
   headline: <>Tech Student, Designer and Programmer</>,
   subline: (
     <>
-      I'm Rizky, a exciting student at <br/>
-      <InlineCode className="">Sriwijaya University</InlineCode>, where I craft intuitive
-      user experiences. After hours, I build my own projects.
+      I'm Rizky, a exciting student at <br />
+      <InlineCode className="">Sriwijaya University</InlineCode>, where I craft
+      intuitive user experiences. After hours, I build my own projects.
     </>
   ),
 };
