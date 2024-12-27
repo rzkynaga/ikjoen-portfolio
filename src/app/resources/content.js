@@ -1,10 +1,10 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Moh Rizky",
-  lastName: "Sinaga",
+  firstName: "Moh Rizky Sinaga",
+  lastName: "Ikjoen",
   get name() {
-    return `${this.firstName} ${this.lastName}`;
+    return `${this.lastName}`;
   },
   role: "Tech Enthusiast",
   avatar: "/images/kadiv.png",
@@ -18,7 +18,7 @@ const newsletter = {
   description: (
     <>
       I occasionally write about design, technology, and share thoughts on the
-      intersection of creativity and engineering.
+      intersection of creativity.
     </>
   ),
 };
@@ -51,20 +51,25 @@ const social = [
 const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
+  description: `Portfolio website showcasing my passion as a ${person.role}`,
   headline: <>Tech Student, Designer and Programmer</>,
   subline: (
-    <>
-      I'm Rizky, a exciting student at <br />
-      <InlineCode className="">Sriwijaya University</InlineCode>, where I craft
-      intuitive user experiences. After hours, I build my own projects.
-    </>
+    <div style={{ textAlign: "justify", marginRight: "4px" }}>
+      <>
+        I'm Rizky "Ikjoen" Sinaga, an exciting student at <> </>
+        <InlineCode style={{ marginLeft: "-0.5px" }} className="">
+          Sriwijaya University
+        </InlineCode>
+        , where I craft intuitive user experiences. After hours, I build my own
+        projects.
+      </>
+    </div>
   ),
 };
 
 const about = {
   label: "About",
-  title: "About me",
+  title: "About Ikjoen",
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -81,20 +86,24 @@ const about = {
     display: true,
     title: "Introduction",
     description: (
-      <>
-        An Information Systems undergraduate with a strong background in UI/UX
-        design and hands-on experience in graphic and visual design. Proficient
-        in tools such as Adobe Photoshop, Figma, Spark AR, and Blender.
-        Demonstrates excellence in public speaking, team leadership, and event
-        management within various student organizations. Passionate about
-        contributing to innovative projects with effective communication
-        strategies.
-      </>
+      <div style={{ textAlign: "justify", margin: "4px" }}>
+        <>
+          An Information Systems undergraduate with a strong background in UI/UX
+          design and hands-on experience in graphic and visual design.
+          Proficient in tools such as Adobe Photoshop, Figma, Spark AR, and
+          Blender. 
+          <br/><br/>
+          Demonstrates excellence in public speaking, team leadership,
+          and event management within various student organizations. Passionate
+          about contributing to innovative projects with effective communication
+          strategies.
+        </>
+      </div>
     ),
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Experience",
+    title: "Experience (org.)",
     experiences: [
       {
         company: "Himaja Unsri",
@@ -459,7 +468,7 @@ const about = {
 
 const blog = {
   label: "Blog",
-  title: "Writing about design and tech...",
+  title: "My journal",
   description: `Read what ${person.name} has been up to recently`,
   // Create new blog posts by adding a new .mdx file to app/blog/posts
   // All posts will be listed on the /blog route
@@ -480,72 +489,27 @@ const gallery = {
   // Images from https://pexels.com
   images: [
     {
-      src: "/images/gallery/img-01.jpg",
+      src: "/images/gallery/gal-5.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-02.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-03.jpg",
+      src: "/images/gallery/gal-3.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-04.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-05.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-06.jpg",
+      src: "/images/gallery/gal-4.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-07.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-08.jpg",
+      src: "/images/gallery/gal-2.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/img-09.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-10.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-11.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-12.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-13.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-14.jpg",
+      src: "/images/gallery/gal-1.jpg",
       alt: "image",
       orientation: "horizontal",
     },
