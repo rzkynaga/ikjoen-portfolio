@@ -27,7 +27,7 @@ export const Footer = () => {
                         © {currentYear} /
                     </Text>
                     <Text paddingX="4">
-                        {person.name}
+                        {person.nickName}
                     </Text>
                     <Text onBackground="neutral-weak">
                         {/* Usage of this template requires attribution. Please don't remove the link to Once UI. */}

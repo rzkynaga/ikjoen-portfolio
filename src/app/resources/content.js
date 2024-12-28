@@ -1,10 +1,11 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Moh Rizky Sinaga",
-  lastName: "Ikjoen",
+  firstName: "Moh Rizky",
+  lastName: "Sinaga",
+  nickName: "Ikjoen",
   get name() {
-    return `${this.lastName}`;
+    return `${this.firstName} '${this.nickName}' ${this.lastName}`; 
   },
   role: "Tech Enthusiast",
   avatar: "/images/kadiv.png",
@@ -103,7 +104,7 @@ const about = {
   },
   work: {
     display: true, // set to false to hide this section
-    title: "Experience (org.)",
+    title: "Experience (events & org.)",
     experiences: [
       {
         company: "Himaja Unsri",
@@ -111,53 +112,58 @@ const about = {
         role: "General Chairman",
         achievements: [
           <>
-            Actively mentoring event planning as an advisor, overseeing more
-            than 10 event coordinators.
+            Guided organizational strategy and mentored organization planning,
+            overseeing more than 30 event coordinators to ensure program success.
+          </>,
+          <>
+            Fostered collaboration among departments, resulting in improved
+            coordination and member engagement.
+          </>,
+          <>
+            Conducted external outreach to other student associations,
+            strengthening inter-organizational relations and ensuring Himaja's presence in broader networks.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/org/himaja24.jpg",
-            alt: "Once UI Project",
+            alt: "Himaja Event Coordination",
             width: 16,
             height: 9,
           },
         ],
       },
+      
       {
         company: "MediaSI Unsri",
-        timeframe: "May 2024 - Present ",
+        timeframe: "May 2024 - Present",
         role: "Creative Production & Documentation Staff",
         achievements: [
           <>
-            Developed innovative visual concepts aligned with emerging trends.
-          </>,
-          <>
-            Successfully managed documentation and visual content for
-            departmental activities.
+            Ensured timely and accurate documentation of departmental activities,
+            enhancing event coverage and promotion.
           </>,
         ],
         images: [],
       },
       {
         company: "Himaja Unsri",
-        timeframe: "Jun 2023 - May 2024 ",
+        timeframe: "Jun 2023 - May 2024",
         role: "Head of Event Division - Internal",
         achievements: [
           <>
-            Boosted team appreciation by sending over 200 thank-you notes to
-            program committee members
+            Enhanced member appreciation by sending over 200 personalized
+            thank-you notes to committee members.
           </>,
           <>
-            Consistently collected feedback from 30+ respondents to evaluate
-            organizational performance.
+            Collected and analyzed feedback from over 10 respondents per-agenda to improve
+            the quality of future events.
           </>,
         ],
         images: [
           {
             src: "/images/projects/org/himaja23.jpg",
-            alt: "Once UI Project",
+            alt: "Himaja Internal Event Division",
             width: 16,
             height: 9,
           },
@@ -165,41 +171,22 @@ const about = {
       },
       {
         company: "Himsi Fasilkom Unsri",
-        timeframe: "Jan 2023 - Des 2023",
+        timeframe: "Jan 2023 - Dec 2023",
         role: "Multimedia Visual Creative Staff - Medinfo",
         achievements: [
           <>
-            Applied trending graphic designs to over five monthly content tasks
-            and event promotions.
+            Created innovative graphic designs for monthly content and major
+            event promotions, boosting engagement.
           </>,
           <>
-            Mastered 5+ editing tools (Photoshop, Figma, Canva, Spark AR,
-            Blender).
+            Mastered over 5 design tools, including Photoshop, Figma, Canva, and
+            Blender, to deliver professional visuals.
           </>,
         ],
         images: [
           {
             src: "/images/projects/org/himsi.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        company: "Himaja Unsri",
-        timeframe: "Sep 2022 - May 2023",
-        role: "Internal Department Staff",
-        achievements: [
-          <>
-            Applied trending graphic designs to over five monthly content tasks
-            and event promotions.
-          </>,
-        ],
-        images: [
-          {
-            src: "/images/projects/org/himaja22.jpg",
-            alt: "Once UI Project",
+            alt: "Himsi Creative Staff",
             width: 16,
             height: 9,
           },
@@ -211,11 +198,21 @@ const about = {
         role: "Head of Event Division",
         achievements: [
           <>
-            Applied trending graphic designs to over five monthly content tasks
-            and event promotions.
+            Successfully coordinated large-scale student orientation events,
+            engaging over 9000 new students.
+          </>,
+          <>
+            Introduced innovative team-building activities.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/ev/bhawasena-5.jpg",
+            alt: "PKKMB Event Management",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       {
         company: "Sriwijaya Besanjo 2024",
@@ -223,14 +220,22 @@ const about = {
         role: "Event Chairman",
         achievements: [
           <>
-            Applied trending graphic designs to over five monthly content tasks
-            and event promotions.
+            Organized a cultural and leadership-themed event attended by 500+ participants, emphasizing the values of unity and creativity.
+          </>,
+          <>
+            Secured sponsorship and collaborations with local organizations, successfully supporting event activities and enhancing visibility.
+          </>,
+          <>
+            Achieved a significant 50% increase in profit compared to the previous year, reflecting improved financial management and sponsorship acquisition.
+          </>,
+          <>
+            Improved participant satisfaction, as reflected in post-event surveys indicating a notable rise in positive feedback.
           </>,
         ],
         images: [
           {
             src: "/images/projects/org/sb24.jpg",
-            alt: "Once UI Project",
+            alt: "Sriwijaya Besanjo Event",
             width: 16,
             height: 9,
           },
@@ -242,11 +247,23 @@ const about = {
         role: "General Steering Committee",
         achievements: [
           <>
-            Applied trending graphic designs to over five monthly content tasks
-            and event promotions.
+            Supervised event planning and implementation to ensure alignment with organizational goals and values.
+          </>,
+          <>
+            Provided strategic advice and guidance to the organizing committee, enabling effective decision-making and program execution.
+          </>,
+          <>
+            Monitored progress and offered solutions to address potential challenges, maintaining overall event quality and standards.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/ev/sb25.jpg",
+            alt: "Sriwijaya Besanjo Event",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       {
         company: "SI Fest 2023",
@@ -254,11 +271,21 @@ const about = {
         role: "Staff of Videography & Documentation",
         achievements: [
           <>
-            Applied trending graphic designs to over five monthly content tasks
-            and event promotions.
+            Delivered high-quality videography and photo documentation for
+            event highlights and promotions.
+          </>,
+          <>
+            Optimized post-production workflows, reducing editing time by 30%.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/ev/sifest.jpg",
+            alt: "Sriwijaya Besanjo Event",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       {
         company: "Information Systems Inauguration 2023",
@@ -266,11 +293,21 @@ const about = {
         role: "Vice Event Chairman",
         achievements: [
           <>
-            Applied trending graphic designs to over five monthly content tasks
-            and event promotions.
+            Spearheaded creative event concepts and execution, enhancing
+            participant engagement.
+          </>,
+          <>
+            Managed a team of 20 to ensure smooth operations and logistics.
           </>,
         ],
-        images: [],
+        images: [
+          {
+            src: "/images/projects/ev/optics.jpg",
+            alt: "Sriwijaya Besanjo Event",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       {
         company: "Himaja Festival 2023",
@@ -278,49 +315,17 @@ const about = {
         role: "Head of Sponsorship Division",
         achievements: [
           <>
-            Applied trending graphic designs to over five monthly content tasks
-            and event promotions.
+            Secured few potential sponsorships, contributing
+            significantly to event funding.
           </>,
-        ],
-        images: [],
-      },
-      {
-        company: "Organizational Management Sharing Session",
-        timeframe: "Feb 2023 - Mar 2023",
-        role: "Head of Publication Documentation Division",
-        achievements: [
           <>
-            Applied trending graphic designs to over five monthly content tasks
-            and event promotions.
+            Maintained strong relationships with sponsors, resulting in
+            recurring support.
           </>,
         ],
         images: [],
       },
-      {
-        company: "Sriwijaya Besanjo 2023",
-        timeframe: "Sep 2022 - Jan 2023",
-        role: "Staff of Media & Information Division",
-        achievements: [
-          <>
-            Applied trending graphic designs to over five monthly content tasks
-            and event promotions.
-          </>,
-        ],
-        images: [],
-      },
-      {
-        company: "Himaja Unsri Anniversary 2022",
-        timeframe: "Oct 2022 - Dec 2022",
-        role: "Vice Event Chairman",
-        achievements: [
-          <>
-            Applied trending graphic designs to over five monthly content tasks
-            and event promotions.
-          </>,
-        ],
-        images: [],
-      },
-    ],
+    ],    
   },
   studies: {
     display: true, // set to false to hide this section
@@ -510,6 +515,21 @@ const gallery = {
     },
     {
       src: "/images/gallery/gal-1.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/gal-6.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/gal-7.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/gallery/gal-8.jpg",
       alt: "image",
       orientation: "horizontal",
     },
