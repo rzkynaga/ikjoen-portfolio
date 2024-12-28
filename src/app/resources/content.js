@@ -234,7 +234,7 @@ const about = {
         ],
         images: [
           {
-            src: "/images/projects/org/sb24.jpg",
+            src: "/images/projects/ev/sb24.jpg",
             alt: "Sriwijaya Besanjo Event",
             width: 16,
             height: 9,
