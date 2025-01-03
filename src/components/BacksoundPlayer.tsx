@@ -1,28 +1,37 @@
 "use client";
 
-import { useState } from 'react';
-import AudioTriggerModal from './AudioTriggerModal';
+import { useEffect, useState } from 'react';
 
 const BacksoundPlayer = () => {
   const [hasInteracted, setHasInteracted] = useState(false);
-  const [showModal, setShowModal] = useState(true);
 
-  const handleInteraction = () => {
-    setHasInteracted(true);
-    setShowModal(false); // Close modal after interaction
-  };
+  useEffect(() => {
+    // Fungsi untuk memutar audio setelah interaksi
+    const handleUserInteraction = () => {
+      setHasInteracted(true);
+      document.removeEventListener('scroll', handleUserInteraction);
+      document.removeEventListener('click', handleUserInteraction);
+    };
+
+    // Tambahkan event listener untuk scroll dan klik
+    document.addEventListener('scroll', handleUserInteraction);
+    document.addEventListener('click', handleUserInteraction);
+
+    return () => {
+      // Bersihkan event listener saat komponen dilepas
+      document.removeEventListener('scroll', handleUserInteraction);
+      document.removeEventListener('click', handleUserInteraction);
+    };
+  }, []);
 
   return (
     <>
-      {showModal && <AudioTriggerModal onClose={handleInteraction} />}
-      <div onClick={handleInteraction} style={{ cursor: 'pointer' }}>
-        {hasInteracted && (
-          <audio autoPlay>
-            <source src="/audio/nina.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
-        )}
-      </div>
+      {hasInteracted && (
+        <audio autoPlay loop>
+          <source src="/audio/nina.mp3" type="audio/mpeg" />
+          Browser Anda tidak mendukung elemen audio.
+        </audio>
+      )}
     </>
   );
 };
