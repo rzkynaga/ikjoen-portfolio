@@ -5,12 +5,12 @@ const person = {
   lastName: "Sinaga",
   nickName: "Ikjoen",
   get name() {
-    return `${this.firstName} '${this.nickName}' ${this.lastName}`; 
+    return `${this.firstName} ${this.lastName}`; 
   },
   role: "Tech Enthusiast",
   avatar: "/images/kadiv.png",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["Bahasa Indonesia", "English"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -53,11 +53,11 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my passion as a ${person.role}`,
-  headline: <>Tech Student, Designer and Programmer</>,
+  headline: <>Tech Enthusiast, Designer and Programmer</>,
   subline: (
     <div style={{ textAlign: "justify", marginRight: "4px" }}>
       <>
-        I'm Rizky "Ikjoen" Sinaga, an exciting student at <> </>
+        I'm Rizky Sinaga, an exciting fresh-graduate from <> </>
         <InlineCode style={{ marginLeft: "-0.5px" }} className="">
           Sriwijaya University
         </InlineCode>
@@ -89,7 +89,7 @@ const about = {
     description: (
       <div style={{ textAlign: "justify", margin: "4px" }}>
         <>
-          An Information Systems undergraduate with a strong background in UI/UX
+          An Information Systems fresh-graduate with a strong background in UI/UX
           design and hands-on experience in graphic and visual design.
           Proficient in tools such as Adobe Photoshop, Figma, Spark AR, and
           Blender. 
@@ -107,8 +107,35 @@ const about = {
     title: "Experience (events & org.)",
     experiences: [
       {
+        company: "BK MWA Unsur Mahasiswa Unsri",
+        timeframe: "Jul 2025 - Jan 2026",
+        role: "Head of Public Communications",
+        achievements: [
+          <>
+            Guided organizational strategy and mentored organization planning,
+            overseeing more than 30 event coordinators to ensure program success.
+          </>,
+          <>
+            Fostered collaboration among departments, resulting in improved
+            coordination and member engagement.
+          </>,
+          <>
+            Conducted external outreach to other student associations,
+            strengthening inter-organizational relations and ensuring Himaja's presence in broader networks.
+          </>,
+        ],
+        images: [
+          {
+            src: "/images/projects/org/himaja24.jpg",
+            alt: "Himaja Event Coordination",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
         company: "Himaja Unsri",
-        timeframe: "May 2023 - Present",
+        timeframe: "May 2024 - Jun 2025",
         role: "General Chairman",
         achievements: [
           <>
@@ -136,7 +163,7 @@ const about = {
       
       {
         company: "MediaSI Unsri",
-        timeframe: "May 2024 - Present",
+        timeframe: "May 2024 - May 2025",
         role: "Creative Production & Documentation Staff",
         achievements: [
           <>
