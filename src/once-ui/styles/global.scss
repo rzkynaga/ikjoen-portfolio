@@ -1,3 +1,10 @@
+:root {
+  --font-family-body: var(--font-primary);
+  --font-family-heading: var(--font-primary);
+  --font-family-label: var(--font-primary);
+  --font-family-code: var(--font-code);
+}
+
 /* BOX-SIZING */
 * {
     box-sizing: border-box;

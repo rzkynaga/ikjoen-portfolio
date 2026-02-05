@@ -5,7 +5,7 @@ const person = {
   lastName: "Sinaga",
   nickName: "Ikjoen",
   get name() {
-    return `${this.firstName} ${this.lastName}`; 
+    return `${this.firstName} ${this.lastName}`;
   },
   role: "Tech Enthusiast",
   avatar: "/images/kadiv.png",
@@ -52,17 +52,37 @@ const social = [
 const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my passion as a ${person.role}`,
-  headline: <>Tech Enthusiast, Designer and Programmer</>,
+  description: `Portfolio website showcasing my experience in project coordination and execution`,
+  headline: (
+    <>
+      <span>Project Officer</span>
+      <span
+        style={{
+          display: "block",
+          fontSize: "0.6em",
+          fontStyle: "italic",
+          opacity: 0.85,
+          marginTop: "0.25em",
+        }}
+      >
+        experienced in cross-functional coordination and project execution
+      </span>
+    </>
+  ),
   subline: (
     <div style={{ textAlign: "justify", marginRight: "4px" }}>
       <>
-        I'm Rizky Sinaga, an exciting fresh-graduate from <> </>
-        <InlineCode style={{ marginLeft: "-0.5px" }} className="">
+        I'm Mohammad Rizky Sinaga, a fresh graduate in{" "}
+        <InlineCode style={{ marginLeft: "-0.5px" }}>
+          Information Systems
+        </InlineCode>{" "}
+        from{" "}
+        <InlineCode style={{ marginLeft: "-0.5px" }}>
           Sriwijaya University
         </InlineCode>
-        , where I craft intuitive user experiences. After hours, I build my own
-        projects.
+        . I have experience leading and coordinating academic and organizational
+        projects, managing teams, and supporting project execution using IT
+        knowledge as a decision-making tool.
       </>
     </div>
   ),
@@ -89,14 +109,15 @@ const about = {
     description: (
       <div style={{ textAlign: "justify", margin: "4px" }}>
         <>
-          An Information Systems fresh-graduate with a strong background in UI/UX
-          design and hands-on experience in graphic and visual design.
+          An Information Systems fresh-graduate with a strong background in
+          UI/UX design and hands-on experience in graphic and visual design.
           Proficient in tools such as Adobe Photoshop, Figma, Spark AR, and
-          Blender. 
-          <br/><br/>
-          Demonstrates excellence in public speaking, team leadership,
-          and event management within various student organizations. Passionate
-          about contributing to innovative projects with effective communication
+          Blender.
+          <br />
+          <br />
+          Demonstrates excellence in public speaking, team leadership, and event
+          management within various student organizations. Passionate about
+          contributing to innovative projects with effective communication
           strategies.
         </>
       </div>
@@ -113,7 +134,8 @@ const about = {
         achievements: [
           <>
             Guided organizational strategy and mentored organization planning,
-            overseeing more than 30 event coordinators to ensure program success.
+            overseeing more than 30 event coordinators to ensure program
+            success.
           </>,
           <>
             Fostered collaboration among departments, resulting in improved
@@ -121,7 +143,8 @@ const about = {
           </>,
           <>
             Conducted external outreach to other student associations,
-            strengthening inter-organizational relations and ensuring Himaja's presence in broader networks.
+            strengthening inter-organizational relations and ensuring Himaja's
+            presence in broader networks.
           </>,
         ],
         images: [
@@ -140,7 +163,8 @@ const about = {
         achievements: [
           <>
             Guided organizational strategy and mentored organization planning,
-            overseeing more than 30 event coordinators to ensure program success.
+            overseeing more than 30 event coordinators to ensure program
+            success.
           </>,
           <>
             Fostered collaboration among departments, resulting in improved
@@ -148,7 +172,8 @@ const about = {
           </>,
           <>
             Conducted external outreach to other student associations,
-            strengthening inter-organizational relations and ensuring Himaja's presence in broader networks.
+            strengthening inter-organizational relations and ensuring Himaja's
+            presence in broader networks.
           </>,
         ],
         images: [
@@ -160,15 +185,15 @@ const about = {
           },
         ],
       },
-      
+
       {
         company: "MediaSI Unsri",
         timeframe: "May 2024 - May 2025",
         role: "Creative Production & Documentation Staff",
         achievements: [
           <>
-            Ensured timely and accurate documentation of departmental activities,
-            enhancing event coverage and promotion.
+            Ensured timely and accurate documentation of departmental
+            activities, enhancing event coverage and promotion.
           </>,
         ],
         images: [],
@@ -183,8 +208,8 @@ const about = {
             thank-you notes to committee members.
           </>,
           <>
-            Collected and analyzed feedback from over 10 respondents per-agenda to improve
-            the quality of future events.
+            Collected and analyzed feedback from over 10 respondents per-agenda
+            to improve the quality of future events.
           </>,
         ],
         images: [
@@ -228,9 +253,7 @@ const about = {
             Successfully coordinated large-scale student orientation events,
             engaging over 9000 new students.
           </>,
-          <>
-            Introduced innovative team-building activities.
-          </>,
+          <>Introduced innovative team-building activities.</>,
         ],
         images: [
           {
@@ -247,16 +270,21 @@ const about = {
         role: "Event Chairman",
         achievements: [
           <>
-            Organized a cultural and leadership-themed event attended by 500+ participants, emphasizing the values of unity and creativity.
+            Organized a cultural and leadership-themed event attended by 500+
+            participants, emphasizing the values of unity and creativity.
           </>,
           <>
-            Secured sponsorship and collaborations with local organizations, successfully supporting event activities and enhancing visibility.
+            Secured sponsorship and collaborations with local organizations,
+            successfully supporting event activities and enhancing visibility.
           </>,
           <>
-            Achieved a significant 50% increase in profit compared to the previous year, reflecting improved financial management and sponsorship acquisition.
+            Achieved a significant 50% increase in profit compared to the
+            previous year, reflecting improved financial management and
+            sponsorship acquisition.
           </>,
           <>
-            Improved participant satisfaction, as reflected in post-event surveys indicating a notable rise in positive feedback.
+            Improved participant satisfaction, as reflected in post-event
+            surveys indicating a notable rise in positive feedback.
           </>,
         ],
         images: [
@@ -274,13 +302,16 @@ const about = {
         role: "General Steering Committee",
         achievements: [
           <>
-            Supervised event planning and implementation to ensure alignment with organizational goals and values.
+            Supervised event planning and implementation to ensure alignment
+            with organizational goals and values.
           </>,
           <>
-            Provided strategic advice and guidance to the organizing committee, enabling effective decision-making and program execution.
+            Provided strategic advice and guidance to the organizing committee,
+            enabling effective decision-making and program execution.
           </>,
           <>
-            Monitored progress and offered solutions to address potential challenges, maintaining overall event quality and standards.
+            Monitored progress and offered solutions to address potential
+            challenges, maintaining overall event quality and standards.
           </>,
         ],
         images: [
@@ -298,8 +329,8 @@ const about = {
         role: "Staff of Videography & Documentation",
         achievements: [
           <>
-            Delivered high-quality videography and photo documentation for
-            event highlights and promotions.
+            Delivered high-quality videography and photo documentation for event
+            highlights and promotions.
           </>,
           <>
             Optimized post-production workflows, reducing editing time by 30%.
@@ -323,9 +354,7 @@ const about = {
             Spearheaded creative event concepts and execution, enhancing
             participant engagement.
           </>,
-          <>
-            Managed a team of 20 to ensure smooth operations and logistics.
-          </>,
+          <>Managed a team of 20 to ensure smooth operations and logistics.</>,
         ],
         images: [
           {
@@ -342,8 +371,8 @@ const about = {
         role: "Head of Sponsorship Division",
         achievements: [
           <>
-            Secured few potential sponsorships, contributing
-            significantly to event funding.
+            Secured few potential sponsorships, contributing significantly to
+            event funding.
           </>,
           <>
             Maintained strong relationships with sponsors, resulting in
@@ -352,7 +381,7 @@ const about = {
         ],
         images: [],
       },
-    ],    
+    ],
   },
   studies: {
     display: true, // set to false to hide this section
