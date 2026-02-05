@@ -125,18 +125,7 @@ export default function Home(
 
 			</Flex>
 			<RevealFx translateY="16" delay={0.6}>
-				<Flex direction="column" gap="s" fillWidth>
-					<Heading as="h2" variant="display-strong-xs">
-						Selected Project Experience
-					</Heading>
-
-					<Text onBackground="neutral-weak">
-						A selection of academic, organizational, and internship projects where I
-						was responsible for coordination, execution, and stakeholder management.
-					</Text>
-
-					<Projects range={[1, 3]} locale={locale} />
-				</Flex>
+				<Projects range={[1, 1]} locale={locale} />
 			</RevealFx>
 
 			{routes['/blog'] && (

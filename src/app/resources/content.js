@@ -7,8 +7,8 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Tech Enthusiast",
-  avatar: "/images/kadiv.png",
+  role: "Project Officer",
+  avatar: "/images/rizki_menyapa.jpg",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["Bahasa Indonesia", "English"], // optional: Leave the array empty if you don't want to display languages
 };
@@ -53,30 +53,11 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my experience in project coordination and execution`,
-  headline: (
-    <>
-      <span>Project Officer</span>
-      <span
-        style={{
-          display: "block",
-          fontSize: "0.6em",
-          fontStyle: "italic",
-          opacity: 0.85,
-          marginTop: "0.25em",
-        }}
-      >
-        experienced in cross-functional coordination and project execution
-      </span>
-    </>
-  ),
+  headline: <>Project Officer</>,
   subline: (
     <div style={{ textAlign: "justify", marginRight: "4px" }}>
       <>
-        I'm Mohammad Rizky Sinaga, a fresh graduate in{" "}
-        <InlineCode style={{ marginLeft: "-0.5px" }}>
-          Information Systems
-        </InlineCode>{" "}
-        from{" "}
+        Mohammad Rizky Sinaga, a fresh-graduate in Information Systems from{" "}
         <InlineCode style={{ marginLeft: "-0.5px" }}>
           Sriwijaya University
         </InlineCode>
@@ -109,20 +90,21 @@ const about = {
     description: (
       <div style={{ textAlign: "justify", margin: "4px" }}>
         <>
-          An Information Systems fresh-graduate with a strong background in
-          UI/UX design and hands-on experience in graphic and visual design.
-          Proficient in tools such as Adobe Photoshop, Figma, Spark AR, and
-          Blender.
+          An Information Systems fresh graduate with experience in coordinating
+          academic and organizational projects. Accustomed to working in
+          cross-functional environments, managing teams, and ensuring project
+          execution runs according to plan.
           <br />
           <br />
-          Demonstrates excellence in public speaking, team leadership, and event
-          management within various student organizations. Passionate about
-          contributing to innovative projects with effective communication
-          strategies.
+          Possesses strong communication skills, leadership experience, and a
+          structured approach to problem-solving. Utilizes IT knowledge as a
+          supporting tool for process analysis, documentation, and informed
+          decision-making within projects.
         </>
       </div>
     ),
   },
+
   work: {
     display: true, // set to false to hide this section
     title: "Experience (events & org.)",
@@ -133,23 +115,29 @@ const about = {
         role: "Head of Public Communications",
         achievements: [
           <>
-            Guided organizational strategy and mentored organization planning,
-            overseeing more than 30 event coordinators to ensure program
-            success.
+            Facilitated effective communication between MWA UM and 30+ student
+            organizations.
           </>,
           <>
-            Fostered collaboration among departments, resulting in improved
-            coordination and member engagement.
+            Led planning and execution of 10+ formal and informal discussion
+            forums.
           </>,
           <>
-            Conducted external outreach to other student associations,
-            strengthening inter-organizational relations and ensuring Himaja's
-            presence in broader networks.
+            Collected over 3,000 student feedback submissions across the
+            university.
           </>,
         ],
         images: [
           {
-            src: "/images/projects/org/himaja24.jpg",
+            src: "/images/projects/org/mwa-1.jpeg",
+            alt: "Himaja Event Coordination",
+            width: 16,
+            height: 9,
+          },
+        ],
+        images: [
+          {
+            src: "/images/projects/org/mwa-1.jpeg",
             alt: "Himaja Event Coordination",
             width: 16,
             height: 9,

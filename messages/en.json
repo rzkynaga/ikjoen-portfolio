@@ -16,7 +16,7 @@
     },
     "about": {
         "label": "About",
-        "title": "See Project & Leadership Experience",
+        "title": "About me",
         "description": "Meet {name}, {role} from {location}",
         "intro": {
             "title": "Introduction",

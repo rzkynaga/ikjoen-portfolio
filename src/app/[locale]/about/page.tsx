@@ -159,12 +159,12 @@ export default function About(
                                 alignItems="center">
                                 <Flex paddingLeft="12">
                                     <Icon
-                                        name="calendar"
+                                        name="calendarapp"
                                         onBackground="brand-weak"/>
                                 </Flex>
                                 <Flex
                                     paddingX="8">
-                                    Schedule a call
+                                    Curriculum Vitae (CV)
                                 </Flex>
                                 <IconButton
                                     href={about.calendar.link}
