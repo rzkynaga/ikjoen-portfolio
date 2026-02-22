@@ -76,6 +76,6 @@
         "description": "A photo collection by {name}"
     },
     "projectCard": {
-        "label": "Read More"
+        "label": "Read More!"
     }
 }
