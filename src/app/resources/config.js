@@ -1,4 +1,4 @@
-const baseURL = 'https://portfolio.ikjoen.space'
+const baseURL = 'portfolio.ikjoen.space'
 
 // Enable localization
 const i18n = false;
