@@ -25,29 +25,30 @@ export async function generateMetadata(
 	const { person, home } = renderContent(t);
 
 	return {
-		metadataBase: new URL(`https://${baseURL}/${locale}`),
+		metadataBase: new URL("https://portfolio.ikjoen.space"),
+
 		title: home.title,
 		description: home.description,
+
 		openGraph: {
-			title: `${person.firstName}'s Portfolio`,
-			description: 'Portfolio website showcasing my work.',
-			url: baseURL,
-			siteName: `${person.firstName}'s Portfolio`,
-			locale: 'en_US',
-			type: 'website',
+			title: home.title,
+			description: home.description,
+			url: "https://portfolio.ikjoen.space",
+			siteName: "Moh Rizky Sinaga Portfolio",
+			images: [
+				{
+					url: "/og-image.jpg",
+					width: 1200,
+					height: 630,
+				},
+			],
+			type: "website",
 		},
-		robots: {
-			index: true,
-			follow: true,
-			googleBot: {
-				index: true,
-				follow: true,
-				'max-video-preview': -1,
-				'max-image-preview': 'large',
-				'max-snippet': -1,
-			},
+
+		icons: {
+			icon: "/favicon.ico",
 		},
-	}
+	};
 };
 
 const primary = Inter({
