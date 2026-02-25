@@ -31,18 +31,13 @@ export async function generateMetadata(
 		description: home.description,
 
 		openGraph: {
-			title: home.title,
-			description: home.description,
-			url: "https://portfolio.ikjoen.space",
-			siteName: "Moh Rizky Sinaga Portfolio",
 			images: [
 				{
-					url: "/og-image.jpg",
+					url: "https://portfolio.ikjoen.space/og-image.jpg",
 					width: 1200,
 					height: 630,
 				},
 			],
-			type: "website",
 		},
 
 		icons: {
