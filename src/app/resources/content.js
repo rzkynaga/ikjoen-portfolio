@@ -42,11 +42,11 @@ const social = [
     icon: "instagram",
     link: "https://instagram.com/rzkynaga",
   },
-  //   {
-  //     name: "Email",
-  //     icon: "email",
-  //     link: "mailto:rzkynaga1@gmail.com",
-  //   },
+  {
+    name: "Email",
+    icon: "email",
+    link: "mailto:rzkynaga1@gmail.com",
+  },
 ];
 
 const home = {
@@ -104,7 +104,27 @@ const about = {
       </div>
     ),
   },
-
+  studies: {
+    display: true, // set to false to hide this section
+    title: "Studies",
+    institutions: [
+      {
+        name: "Sriwijaya University",
+        description: (
+          <>
+            Cumulative GPA: 3.94/4.00 <br />
+            Relevant Courses: UX Design, Web Programming, Operating Systems,
+            Structured Systems Analysis & Design, Object-Oriented Paradigm,
+            Mobile Programming, etc.
+          </>
+        ),
+      },
+      {
+        name: "Nurul Ilmi Islamic High School",
+        description: <>Science and Technology (Saintek).</>,
+      },
+    ],
+  },
   work: {
     display: true, // set to false to hide this section
     title: "Experience (events & org.)",
@@ -371,27 +391,6 @@ const about = {
       },
     ],
   },
-  studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
-    institutions: [
-      {
-        name: "Sriwijaya University",
-        description: (
-          <>
-            Cumulative GPA: 3.94/4.00 <br />
-            Relevant Courses: UX Design, Web Programming, Operating Systems,
-            Structured Systems Analysis & Design, Object-Oriented Paradigm,
-            Mobile Programming, etc.
-          </>
-        ),
-      },
-      {
-        name: "Nurul Ilmi Islamic High School",
-        description: <>Science and Technology (Saintek).</>,
-      },
-    ],
-  },
   technical: {
     display: true, // set to false to hide this section
     title: "Projects",
@@ -405,12 +404,12 @@ const about = {
               via e-wallets.
             </>
           ),
-          (
-            <>
-              Enhanced user experience based on early feedback, reducing user
-              complaints effectively.
-            </>
-          )),
+            (
+              <>
+                Enhanced user experience based on early feedback, reducing user
+                complaints effectively.
+              </>
+            )),
         // optional: leave the array empty if you don't want to display images
         images: [
           {
