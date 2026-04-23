@@ -18,8 +18,9 @@ import { Background, Flex } from "@/once-ui/components";
 import BacksoundPlayer from '@/components/BacksoundPlayer';
 
 export async function generateMetadata(
-	{ params: { locale } }: { params: { locale: string } }
+	{ params }: { params: Promise<{ locale: string }> }
 ) {
+	const { locale } = await params;
 
 	const t = await getTranslations();
 	const { person, home } = renderContent(t);
@@ -73,18 +74,15 @@ const code = Source_Code_Pro({
 
 interface RootLayoutProps {
 	children: React.ReactNode;
-	params: { locale: string };
+	params: Promise<{ locale: string }>;
 }
 
-export function generateStaticParams() {
-	return routing.locales.map((locale) => ({ locale }));
-}
 
 export default async function RootLayout({
 	children,
-	params: { locale }
+	params
 }: RootLayoutProps) {
-	setRequestLocale (locale);
+	const { locale } = await params;
 	const messages = await getMessages();
 	return (
 		<NextIntlClientProvider messages={messages}>
