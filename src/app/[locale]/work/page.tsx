@@ -8,7 +8,6 @@ import { useTranslations } from 'next-intl';
 export async function generateMetadata(
     {params: {locale}}: { params: { locale: string }}
 ) {
-
     const t = await getTranslations();
     const { work } = renderContent(t);
 
@@ -24,12 +23,7 @@ export async function generateMetadata(
 			description,
 			type: 'website',
 			url: `https://${baseURL}/${locale}/work/`,
-			images: [
-				{
-					url: ogImage,
-					alt: title,
-				},
-			],
+			images: [{ url: ogImage, alt: title }],
 		},
 		twitter: {
 			card: 'summary_large_image',
@@ -43,16 +37,20 @@ export async function generateMetadata(
 export default function Work(
     { params: {locale}}: { params: { locale: string }}
 ) {
-    setRequestLocale (locale);
-    let allProjects = getPosts(['src', 'app', '[locale]', 'work', 'projects', locale]);
+    setRequestLocale(locale);
+
+    let allProjects: ReturnType<typeof getPosts> = [];
+    try {
+        allProjects = getPosts(['src', 'app', '[locale]', 'work', 'projects', locale]);
+    } catch {
+        allProjects = [];
+    }
 
     const t = useTranslations();
     const { person, work } = renderContent(t);
 
     return (
-        <Flex
-			fillWidth maxWidth="m"
-			direction="column">
+        <Flex fillWidth maxWidth="m" direction="column">
             <script
                 type="application/ld+json"
                 suppressHydrationWarning
