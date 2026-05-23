@@ -15,7 +15,13 @@ export function Posts({
     locale = 'en',
     thumbnail = false
 }: PostsProps) {
-    let allBlogs = getPosts(['src', 'app', '[locale]', 'blog', 'posts', locale]);
+    let allBlogs = [];
+    
+    try {
+        allBlogs = getPosts(['src', 'app', '[locale]', 'blog', 'posts', locale]);
+    } catch {
+        return <></>;
+    }
 
     const sortedBlogs = allBlogs.sort((a, b) => {
         return new Date(b.metadata.publishedAt).getTime() - new Date(a.metadata.publishedAt).getTime();
@@ -24,7 +30,7 @@ export function Posts({
     const displayedBlogs = range
         ? sortedBlogs.slice(
               range[0] - 1,
-              range.length === 2 ? range[1] : sortedBlogs.length 
+              range.length === 2 ? range[1] : sortedBlogs.length
           )
         : sortedBlogs;
 
