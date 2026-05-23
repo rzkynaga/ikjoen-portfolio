@@ -15,7 +15,7 @@ export function Posts({
     locale = 'en',
     thumbnail = false
 }: PostsProps) {
-    let allBlogs = [];
+    let allBlogs: ReturnType<typeof getPosts> = [];
     
     try {
         allBlogs = getPosts(['src', 'app', '[locale]', 'blog', 'posts', locale]);
@@ -29,9 +29,9 @@ export function Posts({
 
     const displayedBlogs = range
         ? sortedBlogs.slice(
-              range[0] - 1,
-              range.length === 2 ? range[1] : sortedBlogs.length
-          )
+            range[0] - 1,
+            range.length === 2 ? range[1] : sortedBlogs.length
+        )
         : sortedBlogs;
 
     return (

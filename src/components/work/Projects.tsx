@@ -8,8 +8,8 @@ interface ProjectsProps {
 }
 
 export function Projects({ range, locale }: ProjectsProps) {
-    let allProjects = [];
-    
+    let allProjects: ReturnType<typeof getPosts> = [];
+
     try {
         allProjects = getPosts(['src', 'app', '[locale]', 'work', 'projects', locale]);
     } catch {
@@ -36,7 +36,7 @@ export function Projects({ range, locale }: ProjectsProps) {
                     title={post.metadata.title}
                     description={post.metadata.summary}
                     content={post.content}
-                    avatars={post.metadata.team?.map((member) => ({ src: member.avatar })) || []}/>
+                    avatars={post.metadata.team?.map((member) => ({ src: member.avatar })) || []} />
             ))}
         </Flex>
     );
