@@ -32,7 +32,6 @@
   },
   "devDependencies": {
     "@csstools/postcss-global-data": "^2.1.1",
-    "@types/cookie": "^1.0.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -41,3 +40,4 @@
     "typescript": "^5"
   }
 }
+
