@@ -15,11 +15,11 @@
     "classnames": "^2.5.1",
     "cookie": "^1.1.1",
     "gray-matter": "^4.0.3",
-    "next": "^16.4.2",
+    "next": "^16.4.3",
     "next-intl": "^4.9.1",
     "next-mdx-remote": "^6.0.0",
-    "postcss": "^8.5.30",
-    "postcss-preset-env": "^11.6.1",
+    "postcss": "^8.5.32",
+    "postcss-preset-env": "^11.6.2",
     "prismjs": "^1.29.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -27,7 +27,7 @@
     "react-masonry-css": "^1.0.16",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1",
-    "sass": "^1.105.1",
+    "sass": "^1.107.0",
     "sharp": "^0.35.5"
   },
   "devDependencies": {
